@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="NS" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="default">
+				<Option output="NS" prefix_auto="1" extension_auto="1" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O3" />
+				</Compiler>
+				<Linker>
+					<Add library="ole32" />
+					<Add library="oleaut32" />
+					<Add library="comdlg32" />
+					<Add library="gdi32" />
+					<Add library="ws2_32" />
+					<Add library="Iphlpapi" />
+					<Add library="Shell32" />
+					<Add library="libssh.dll" />
+				</Linker>
+			</Target>
+		</Build>
+		<Linker>
+			<Add library="ws2_32" />
+			<Add library="comctl32" />
+			<Add library="iphlpapi" />
+			<Add library="netapi32" />
+			<Add library="ole32" />
+			<Add library="mpr" />
+			<Add library="dnsapi" />
+		</Linker>
+		<Unit filename="crypt/md5.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="crypt/sha1.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="crypt/sha1.h" />
+		<Unit filename="crypt/sha2.cpp" />
+		<Unit filename="crypt/sha2.h" />
+		<Unit filename="main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="resources.h" />
+		<Unit filename="resources.rc">
+			<Option compilerVar="WINDRES" />
+		</Unit>
+		<Unit filename="review.txt" />
+		<Unit filename="tests/Files.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="tests/IOC.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="tests/NetBIOS.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="tests/Registry.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="tests/auto_scan.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="tests/disco.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="tests/extract.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="tests/ssh.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+			<DoxyBlocks>
+				<comment_style block="0" line="0" />
+				<doxyfile_project />
+				<doxyfile_build />
+				<doxyfile_warnings />
+				<doxyfile_output />
+				<doxyfile_dot />
+				<general />
+			</DoxyBlocks>
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

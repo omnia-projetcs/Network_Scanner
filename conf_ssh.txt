@@ -1,0 +1,4 @@
+uname -a
+ifconfig -a
+ls -al
+pwd
